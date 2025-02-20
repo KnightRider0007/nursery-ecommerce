@@ -1,9 +1,9 @@
 // src/pages/CartPage.js
 import React from "react";
-import { useCart } from "../context/CartContext"; // Import Cart Context
+import { useCart } from "../context/CartContext"; 
 
 const CartPage = () => {
-  const { cartItems, removeFromCart } = useCart(); // Get cart data & remove function
+  const { cartItems, removeFromCart } = useCart(); 
 
   // Calculate Grand Total
   const grandTotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);

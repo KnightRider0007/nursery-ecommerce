@@ -1,17 +1,14 @@
-// src/context/CartContext.js
+
 import React, { createContext, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Create a Context
 const CartContext = createContext();
-
-// Custom Hook to use CartContext
 export const useCart = () => useContext(CartContext);
 
 // Cart Provider Component
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
-  const navigate = useNavigate(); // To navigate after adding item to cart
+  const navigate = useNavigate(); 
 
   // Add item to cart
   const addToCart = (product) => {

@@ -1,7 +1,6 @@
-// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CartProvider } from "./context/CartContext"; // Import CartProvider
+import { CartProvider } from "./context/CartContext"; 
 import HomePage from "./pages/HomePage";
 import ContactPage from './pages/ContactPage';
 import ProductListPage from "./pages/ProductListPage";
