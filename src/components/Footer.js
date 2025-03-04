@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { FaWhatsapp, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
@@ -17,6 +17,18 @@ const Footer = () => {
           <FaYoutube />
         </a>
       </div>
+      <p>
+        <Link to="/Terms" className="Terms">
+          Terms & Conditions
+        </Link>
+  </p>
+  <p>
+        <Link to="/Privacy" className="privacy-link">
+          Privacy & Policy
+        </Link>
+  </p>
+
+
     </footer>
   );
 };
